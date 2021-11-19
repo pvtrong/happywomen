@@ -92,7 +92,7 @@
 
                 //---Nam = Câu hỏi -> Dò sét tình yêu---\\
                 window.my_infowindow = new google.maps.InfoWindow({
-                    content: "<b style='color: red;display:flex;text-align: center;font-size: 20px; margin-bottom: 20px;'>Chúc cô luôn xinh đẹp, luôn trẻ mãi như tuổi 20 </b>" + "<img style='width:648px; object-fit:contain;'  src='photos/4.jpg' />", //Câu hỏi cho cô cấy
+                    content: "<b style='color: red;display:flex;text-align: center;font-size: 20px; margin-bottom: 20px;'>Chúc cô luôn xinh đẹp, luôn trẻ mãi như tuổi 20 </b>" + "<img style='width: 100%; object-fit: contain;' src='photos/4.jpg' />", //Câu hỏi cho cô cấy
                     position: WUHAN
                 });
                 my_infowindow.open(map);
@@ -103,7 +103,7 @@
                 }, 5000);
                 //---Nữ = câu trả lời -> tình yêu--\\
                 window.your_infowindow = new google.maps.InfoWindow({
-                    content:  "<b style='color: red;display:flex;text-align: center;font-size: 20px; margin-bottom: 20px;'>Chúc cô luôn hạnh phúc bên gia đình của mình </b>" + "<img style='width:648px; object-fit:contain;' src='photos/5.jpg' /><img src='photos/6.jpg' style='width:648px; object-fit:contain;' />", //Câu hỏi cho cô cấy,
+                    content:  "<b style='color: red;display:flex;text-align: center;font-size: 20px; margin-bottom: 20px;'>Chúc cô luôn hạnh phúc bên gia đình của mình </b>" + "<img style='width: 100%; object-fit: contain;' src='photos/5.jpg' /><img style='width: 100%; object-fit: contain;' src='photos/6.jpg' ' />", //Câu hỏi cho cô cấy,
                     position: WUHAN
                 });
                 setTimeout(function() {
@@ -209,7 +209,7 @@
                 $.each(photos, function(i, photo) {
                     var point = photo.point.split(",");
                     var infowindow = new google.maps.InfoWindow({
-                        content: "<img style='width:648px; object-fit:contain;' src='" + photo.src + "' />", //Size Img
+                        content: "<img style='width: 100%; object-fit: contain;' src='" + photo.src + "' />", //Size Img
                         position: new google.maps.LatLng(point[0], point[1])
                     });
                     infowindows.push(infowindow);
