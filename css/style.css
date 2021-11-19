@@ -20,8 +20,10 @@ body {
 .header{
   margin-bottom: 40px;
     color: #26269a;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
+    line-height: 42px;
+    font-size: 27px;
 }
 .bc{
   display: flex;
@@ -43,6 +45,7 @@ body {
     left: 0;
 }
 #curtain{
+  height: 100% !important;
     position: absolute;
     top: 0;
     left: 0;
